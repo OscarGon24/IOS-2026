@@ -1,3 +1,0 @@
-var message = "Hello World"
-
-print(message)
