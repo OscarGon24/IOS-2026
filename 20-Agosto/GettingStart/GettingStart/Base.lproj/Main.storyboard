@@ -16,28 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57B-DJ-Tde">
-                                <rect key="frame" x="16" y="134" width="361" height="634"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Haz un tap en el boton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXs-9C-MTf">
+                                <rect key="frame" x="16" y="118" width="361" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lry-MC-f7b">
+                                <rect key="frame" x="159" y="433.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h9V-C4-jzV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="57B-DJ-Tde" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="9Dc-L7-FQd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="57B-DJ-Tde" secondAttribute="trailing" constant="16" id="9Qu-FL-gEi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="57B-DJ-Tde" secondAttribute="bottom" constant="16" id="Bw4-An-OPw"/>
-                            <constraint firstItem="57B-DJ-Tde" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="CXf-W1-1rA"/>
-                            <constraint firstItem="57B-DJ-Tde" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WWz-XX-sSl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="57B-DJ-Tde" secondAttribute="bottom" constant="16" id="i2D-xj-lK8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gXs-9C-MTf" secondAttribute="trailing" constant="16" id="88Q-vq-Pnq"/>
+                            <constraint firstItem="Lry-MC-f7b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Eg-jH-ruk"/>
+                            <constraint firstItem="Lry-MC-f7b" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HoG-5G-t5c"/>
+                            <constraint firstItem="gXs-9C-MTf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f3C-hv-YMw"/>
+                            <constraint firstItem="gXs-9C-MTf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hyA-nI-XT3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblText" destination="gXs-9C-MTf" id="OfG-Y3-Bjj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="4"/>
+            <point key="canvasLocation" x="113.74045801526717" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
