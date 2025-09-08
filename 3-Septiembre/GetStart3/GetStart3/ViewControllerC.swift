@@ -14,7 +14,7 @@ class ViewControllerC: UIViewController {
     
     @IBAction func didtap(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let vc3 = storyboard.instantiateViewController(withIdentifier: "vc5")
+        let vc3 = storyboard.instantiateViewController(withIdentifier: "vc4")
         self.navigationController?.pushViewController(vc3, animated: true)
     }
 }
