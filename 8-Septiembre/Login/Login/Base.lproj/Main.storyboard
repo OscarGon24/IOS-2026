@@ -115,7 +115,6 @@
                         <viewLayoutGuide key="safeArea" id="cgU-eb-tnw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pKP-oZ-m6B"/>
                     <connections>
                         <outlet property="lastLogin" destination="wpg-KT-9UA" id="ZZD-0G-5vO"/>
                         <outlet property="user" destination="e2G-0Y-bJQ" id="zfF-Ie-8Xs"/>

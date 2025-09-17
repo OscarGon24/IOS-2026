@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let dataStore: DataStoreProtocol = DataStore()
+    
     
     @IBOutlet weak var username: UITextField!
     
@@ -20,6 +22,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func login(_ sender: Any) {
+        let user = dataStore.obtain(username.text ?? "")
+        
+        //Logica para verificar usuario y contraseña
+        if user?.username == username.text && user?.password == password.text {
+            //mandar a dashboard
+            
+        }
     }
     
 }
